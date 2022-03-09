@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fondo.css' %}">
+    <title>Registro</title>
+</head>
+
+<body>
+    <main class="container d-flex align-items-center justify-content-center vh-100 ">
+
+        <div class="row formulario rounded shadow col-md-6 col-sm-8 col-xl-6 col-lg-5">
+
+            <div class="col">
+                <form action="{% url 'Home:Datos' %}" method="GET">
+                    <!-- LOGO -->
+                    <div class="imagen text-center">
+                        <img src="{% static 'imagenes/logoUaem.png' %}" width="100" alt="">
+                        <h2 class="texto1 fw-bold text-center">REGISTRO DE USUARIO</h2>
+                    </div>
+                    <!-- NOMBRE DE USUARIO -->
+                    <div class="input-group mb-3 py-2">
+                        <span class="inColor input-group-text" id="">Nombre Completo: </span>
+                        <input type="text" class="form-control" id="Nombre" name="Nombre">
+                    </div>
+
+                    <!-- NUMERO DE CUENTA -->
+                    <div class="input-group mb-3 py-2">
+                        <span class="inColor input-group-text" id="inputGroup-sizing-default">Matricula: </span>
+                        <input type="text" class="form-control" id="Matricula" name="Matricula">
+                    </div>
+
+                    <!-- CARRERA Y SEMESTRE -->
+                    <div class="input-group mb-3 py-2">
+                        <span class="inColor input-group-text" id="inputGroup-sizing-default">Carrera: </span>
+                        <input type="text" class="form-control" id="Carrera" name="Carrera">
+                        <span class="inColor input-group-text" id="inputGroup-sizing-default">Semestre: </span>
+                        <input type="text" class="form-control" id="Semestre" name="Semestre">
+                    </div>
+
+                    <!-- CORREO ELECTRONICO -->
+                    <div class="input-group mb-3 py-2">
+                        <span class="inColor input-group-text" id="inputGroup-sizing-default">Correo Electronico:
+                        </span>
+                        <input type="email" class="form-control" id="CM" name="CM">
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn boton1">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

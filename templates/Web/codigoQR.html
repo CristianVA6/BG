@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/QR.css' %}">
+    <title>Registro</title>
+</head>
+
+<body>
+    <main class="container d-flex align-items-center justify-content-center vh-100 ">
+
+        <div class="row formulario rounded shadow col-md-6 col-sm-8 col-xl-6 col-lg-5">
+
+            <div class="col">
+                <img src="{% static 'imagenes/1.png' %}" class="rounded mx-auto d-block codigoQR" alt="...">
+            </div>
+            <h3 class="texto1 fw-bold text-center">Su CodigoQR</h3>
+        </div>
+    </main>
+</body>
+
+</html>

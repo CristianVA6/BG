@@ -1,0 +1,14 @@
+body{
+    background: linear-gradient(to right, #74886C, #A49A65);
+    margin:0%;
+}
+.formulario{
+    background-color: #ffffff;
+    padding: 25px;
+    width: 320px;
+    height: 320px;
+    
+}
+.codigoQR{
+    width: 250px;
+}

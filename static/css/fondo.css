@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(to right, #74886C, #A49A65)
+}
+.formulario{
+    background-color: #ffffff;
+    padding: 15px;
+}
+.imagen{
+    padding: 45px;
+}
+.texto1{
+    padding: 10px;
+}
+.inColor{
+    background-color:#74886c;
+    color: #ffffff;
+}
+.boton1{
+    background-color: #A49A65;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
